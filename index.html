@@ -25,7 +25,6 @@
             line-height: 2; /* Double spacing */
         }
 
-        /* New styles for flexbox layout */
         .content-wrapper {
             display: flex;
             align-items: flex-start; /* align content to the top */
@@ -35,6 +34,10 @@
             margin-right: 20px; /* Optional: space between the image and the content */
         }
 
+        /* Added this new CSS rule */
+        .content-text {
+            margin-top: -20px; /* Adjust this value as needed */
+        }
     </style>
 </head>
 
@@ -43,14 +46,14 @@
 
     <div class="content-wrapper">
         <img src="headshot.jpg" alt="Steven" width="200">
-        .content-text {
-    margin-top: -20px
-}
-       <div class="content-text">
-            <p>Hello, and welcome to my website! I'm Qiang (Steven) Wu, currently pursuing my Ph.D. in Political Science at the Bush School of Government & Public Service, Texas A&M University. My academic journey delves into the relationship between international political economy and international security, with an emphasis on U.S.-China Relations. Additionally, I investigate the nexus between democratization and trade liberalization, as well as public opinion concerning trade policy and globalization.<br> <!-- Use <br> to introduce space between paragraphs -->
-I've gained professional experience in China, including roles at the Foreign Affairs Committee of the National People’s Congress and at Peking University. Prior to joining Texas A&M, I earned an M.A. in International Economics and China Studies from Johns Hopkins University’s School of Advanced International Studies, with a specialization in Economic Policy. My educational background also includes an M.A. in Economics from Kyoto University, as well as an M.A. in International Relations and a B.A. in Political Science from Peking University.<br> 
 
-For a more detailed overview of my academic journey, please take a moment to <a href="Qiang Steven Wu CV.pdf">view my CV here</a>.</p>
+        <!-- Added the class here -->
+        <div class="content-text">
+            <p>Hello, and welcome to my website! I'm Qiang (Steven) Wu, currently pursuing my Ph.D. in Political Science at the Bush School of Government & Public Service, Texas A&M University. My academic journey delves into the relationship between international political economy and international security, with an emphasis on U.S.-China Relations. Additionally, I investigate the nexus between democratization and trade liberalization, as well as public opinion concerning trade policy and globalization.<br>
+                
+                I've gained professional experience in China, including roles at the Foreign Affairs Committee of the National People’s Congress and at Peking University. Prior to joining Texas A&M, I earned an M.A. in International Economics and China Studies from Johns Hopkins University’s School of Advanced International Studies, with a specialization in Economic Policy. My educational background also includes an M.A. in Economics from Kyoto University, as well as an M.A. in International Relations and a B.A. in Political Science from Peking University.<br> 
+
+                For a more detailed overview of my academic journey, please take a moment to <a href="Qiang Steven Wu CV.pdf">view my CV here</a>.</p>
         </div>
     </div>
 </body>
