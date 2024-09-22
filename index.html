@@ -1,100 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qiang (Steven) Wu's Personal Website</title>
     <style>
-        body {
-            background-image: url('yangming.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            color: white;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
+        /* Navigation bar styles */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-start;
+            padding: 10px;
         }
-Copy    .navbar {
-        background-color: rgba(51, 51, 51, 0.8);
-        overflow: hidden;
-        display: flex;
-        justify-content: flex-start;
-        padding: 10px;
-    }
 
-    .navbar a {
-        color: white;
-        padding: 14px 20px;
-        text-decoration: none;
-        text-align: center;
-    }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
 
-    .navbar a:hover {
-        background-color: rgba(87, 87, 87, 0.8);
-        color: white;
-    }
+        .navbar a:hover {
+            background-color: #575757;
+            color: white;
+        }
 
-    .content-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: rgba(0, 0, 0, 0.7);
-        border-radius: 10px;
-    }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
 
-    h1 {
-        background-color: rgba(0, 0, 0, 0.7);
-        padding: 10px;
-        border-radius: 5px;
-    }
+        .button:hover {
+            background-color: darkblue;
+        }
 
-    .content-wrapper {
-        display: flex;
-        align-items: flex-start;
-    }
+        p {
+            line-height: 2; /* Double spacing */
+        }
 
-    .content-wrapper img {
-        margin-right: 20px;
-        max-width: 200px;
-        height: auto;
-    }
+        .content-wrapper {
+            display: flex;
+            align-items: flex-start; /* align content to the top */
+        }
 
-    .content-text {
-        flex: 1;
-    }
+        .content-wrapper img {
+            margin-right: 20px; /* Optional: space between the image and the content */
+        }
 
-    p {
-        line-height: 1.6;
-    }
-</style>
+        .content-text {
+            margin-top: -20px; /* Adjust this value as needed */
+        }
+    </style>
 </head>
+
 <body>
+
+    <!-- Navigation bar with links -->
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
         <a href="teaching.html">Teaching</a>
         <a href="forum.html">Forum</a>
-        <a href="Qiang%20Steven%20Wu%20CV.pdf" target="_blank">CV</a>
+        <a href="Qiang%20Steven%20Wu%20CV.pdf" target="_blank">CV</a> <!-- Added CV button -->
     </div>
-Copy<div class="content-container">
+
     <h1>Qiang (Steven) Wu / 吴强</h1>
 
     <div class="content-wrapper">
         <img src="headshot.jpg" alt="Steven" width="200">
 
         <div class="content-text">
-            <p>Howdy! I'm Steven, a Ph.D. candidate in Political Science at the Bush School of Government & Public Service at Texas A&M University. My research interests focus on the U.S.-China competition and the global order from the perspectives of international political economy, security, and institutions. Another strand of my research examines globalization—specifically trade policy—and its interplay with domestic political institutions and public opinion.</p>
+            <p>Howdy! I'm Steven, a Ph.D. candidate in Political Science at the Bush School of Government & Public Service at Texas A&M University. My research interests focus on the U.S.-China competition and the global order from the perspectives of international political economy, security, and institutions. Another strand of my research examines globalization—specifically trade policy—and its interplay with domestic political institutions and public opinion.<br><br>
+                
+My multifaceted academic background has equipped me to pursue this research trajectory. I grounded myself in political science with a B.A. in Political Science and an M.A. in International Relations from Peking University. Further expanding my academic spectrum, I acquired an M.A. in Economics from Kyoto University. I later integrated these disciplines by obtaining an M.A. in International Economics and Asia / China Studies from Johns Hopkins University School of Advanced International Studies (SAIS), where I refined my research interests as I transitioned to the doctoral stage.<br><br>
 
-            <p>My multifaceted academic background has equipped me to pursue this research trajectory. I grounded myself in political science with a B.A. in Political Science and an M.A. in International Relations from Peking University. Further expanding my academic spectrum, I acquired an M.A. in Economics from Kyoto University. I later integrated these disciplines by obtaining an M.A. in International Economics and Asia / China Studies from Johns Hopkins University School of Advanced International Studies (SAIS), where I refined my research interests as I transitioned to the doctoral stage.</p>
+In addition to academic training, my diverse field experiences across the Indo-Pacific and beyond have deepened my understanding of real-world politics and inspired substantive research questions. I made firsthand observations of politics and foreign policy during my eight-year tenure at the Foreign Affairs Committee of the National People’s Congress in China. Two immersive years in Japan enhanced my understanding of its academic and social contexts. Moreover, my experience working for a South Korean multinational corporation for two years gave me knowledge of the Korean economy and culture. My visits as part of official and academic delegations to countries like Thailand, Russia, Germany, and Italy further broadened my global outlook.<br><br>
 
-            <p>In addition to academic training, my diverse field experiences across the Indo-Pacific and beyond have deepened my understanding of real-world politics and inspired substantive research questions. I made firsthand observations of politics and foreign policy during my eight-year tenure at the Foreign Affairs Committee of the National People's Congress in China. Two immersive years in Japan enhanced my understanding of its academic and social contexts. Moreover, my experience working for a South Korean multinational corporation for two years gave me knowledge of the Korean economy and culture. My visits as part of official and academic delegations to countries like Thailand, Russia, Germany, and Italy further broadened my global outlook.</p>
-
-            <p>My work has garnered multiple recognitions from America, Asia, and Europe. For the 2024-2025 academic year, I am expanding my horizons as a junior scholar in the Carnegie International Policy Scholars Consortium and Network (IPSCON) program, hosted by the SAIS Kissinger Center for Global Affairs, while concurrently holding the Humane Studies Fellowship, which provides crucial support for my dissertation research. In 2023, my paper on third-party country strategies secured first place in the Business and Political Science Section for Graduate Students during the Student Research Week Competition at Texas A&M University. My other work in rethinking multilateralism earned me the second place for the 2020 Henry Owen Memorial Award, granted by the Bretton Woods Committee. Additionally, I have received competitive financial awards from a diverse array of institutions like the Cato Institute, Institute for Humane Studies, International Studies Association, Texas A&M University, Johns Hopkins University, Kyoto University, National Committee on U.S.-China Relations, Northeast Asia Economic Forum, Volkswagen Foundation, and Japan International Cooperation Agency. For a more detailed overview of my work, please take a moment to <a href="Qiang Steven Wu CV.pdf" style="color: #add8e6;">view my CV here</a>.</p>
+My work has garnered multiple recognitions from America, Asia, and Europe. For the 2024-2025 academic year, I am expanding my horizons as a junior scholar in the Carnegie International Policy Scholars Consortium and Network (IPSCON) program, hosted by the SAIS Kissinger Center for Global Affairs, while concurrently holding the Humane Studies Fellowship, which provides crucial support for my dissertation research. In 2023, my paper on third-party country strategies secured first place in the Business and Political Science Section for Graduate Students during the Student Research Week Competition at Texas A&M University. My other work in rethinking multilateralism earned me the second place for the 2020 Henry Owen Memorial Award, granted by the Bretton Woods Committee. Additionally, I have received competitive financial awards from a diverse array of institutions like the Cato Institute, Institute for Humane Studies, International Studies Association, Texas A&M University, Johns Hopkins University, Kyoto University, National Committee on U.S.-China Relations, Northeast Asia Economic Forum, Volkswagen Foundation, and Japan International Cooperation Agency. For a more detailed overview of my work, please take a moment to <a href="Qiang Steven Wu CV.pdf">view my CV here</a>.</p>
         </div>
     </div>
-</div>
+
 </body>
+
 </html>
