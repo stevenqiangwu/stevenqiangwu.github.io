@@ -7,83 +7,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qiang (Steven) Wu's Personal Website</title>
     <style>
-        /* Ensure the background image covers the full page */
+        /* Add background image to the body */
         body {
             font-family: Arial, sans-serif;
-            background-image: url('yangming.jpg'); /* Path to your background image */
+            background-image: url('yangming.jpg'); /* Path to the background image */
             background-size: cover; /* Ensures the image covers the full screen */
             background-position: center; /* Center the image */
-            background-repeat: no-repeat; /* Prevents tiling of the image */
-            height: 100vh; /* Forces the page height to be at least the viewport height */
+            background-repeat: no-repeat; /* Prevents tiling */
+            min-height: 100vh; /* Ensure the body height covers the full screen */
             margin: 0;
             padding: 0;
+        }
+
+        /* Container to ensure content always has enough space */
+        .container {
+            min-height: 100vh; /* Minimum height is the full screen */
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
         }
 
-        /* Make sure the content fits inside the viewport with padding */
-        .content-wrapper {
-            display: flex;
-            align-items: flex-start;
-            background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white background for better readability */
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px auto;
-            max-width: 1000px; /* Limit the content width */
-        }
-
-        .content-wrapper img {
-            margin-right: 20px; /* Space between the image and text */
-        }
-
+        /* Navigation bar styles */
         .navbar {
-            background-color: rgba(0, 0, 0, 0.7); /* Darker navbar with some transparency */
-            width: 100%;
-            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7); /* Dark navbar with transparency */
+            overflow: hidden;
             display: flex;
             justify-content: center;
+            padding: 10px;
         }
 
         .navbar a {
             color: white;
             padding: 14px 20px;
             text-decoration: none;
+            text-align: center;
         }
 
         .navbar a:hover {
             background-color: #575757;
         }
 
-        p {
-            line-height: 1.6;
-            color: #333; /* Darker text for better readability */
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
         }
 
-        h1 {
-            text-align: center;
+        .content-wrapper {
+            display: flex;
+            align-items: flex-start;
+            background-color: rgba(255, 255, 255, 0.85); /* White with slight transparency */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 1000px; /* Limit the content width */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for emphasis */
+        }
+
+        .content-wrapper img {
+            margin-right: 20px;
+        }
+
+        p {
+            line-height: 1.6;
             color: #333;
-            margin-top: 20px;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Navigation bar with links -->
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="forum.html">Forum</a>
-        <a href="Qiang%20Steven%20Wu%20CV.pdf" target="_blank">CV</a>
-    </div>
+    <!-- Container to hold the entire page content -->
+    <div class="container">
+        <!-- Navigation bar with links -->
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="research.html">Research</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="forum.html">Forum</a>
+            <a href="Qiang%20Steven%20Wu%20CV.pdf" target="_blank">CV</a>
+        </div>
 
-    <h1>Qiang (Steven) Wu / 吴强</h1>
+        <h1>Qiang (Steven) Wu / 吴强</h1>
 
-    <div class="content-wrapper">
-        <img src="headshot.jpg" alt="Steven" width="200">
-        <div class="content-text">
-            <p>Howdy! I'm Steven, a Ph.D. candidate in Political Science at the Bush School of Government & Public Service at Texas A&M University. My research interests focus on the U.S.-China competition and the global order from the perspectives of international political economy, security, and institutions...</p>
+        <div class="content-wrapper">
+            <img src="headshot.jpg" alt="Steven" width="200">
+            <div class="content-text">
+                <p>Howdy! I'm Steven, a Ph.D. candidate in Political Science at the Bush School of Government & Public Service at Texas A&M University. My research interests focus on the U.S.-China competition and the global order from the perspectives of international political economy, security, and institutions...</p>
+            </div>
         </div>
     </div>
 
