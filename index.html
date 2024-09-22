@@ -7,83 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qiang (Steven) Wu's Personal Website</title>
     <style>
-        /* Add background image to the body */
+        /* Ensure the background image covers the full page */
         body {
             font-family: Arial, sans-serif;
-            background-image: url('yangming.jpg'); /* Path to the background image */
-            background-size: cover; /* Ensure the image covers the entire background */
+            background-image: url('yangming.jpg'); /* Path to your background image */
+            background-size: cover; /* Ensures the image covers the full screen */
             background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevents tiling of the image */
+            height: 100vh; /* Forces the page height to be at least the viewport height */
             margin: 0;
             padding: 0;
-            min-height: 100vh; /* Ensures full height, at least the height of the viewport */
-        }
-
-        /* Navigation bar styles */
-        .navbar {
-            background-color: #333;
-            overflow: hidden;
             display: flex;
-            justify-content: flex-start;
-            padding: 10px;
+            flex-direction: column;
         }
 
-        .navbar a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-        }
-
-        .navbar a:hover {
-            background-color: #575757;
-            color: white;
-        }
-
-        p {
-            line-height: 2; /* Double spacing */
-            color: #333; /* Darker text color for better readability */
-        }
-
+        /* Make sure the content fits inside the viewport with padding */
         .content-wrapper {
             display: flex;
             align-items: flex-start;
-            background-color: rgba(255, 255, 255, 0.8); /* White with slight transparency */
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px;
-        }
-
-        .content-wrapper img {
-            margin-right: 20px; /* Space between the image and text */
-        }
-
-        .content-text {
-            margin-top: -20px; /* Adjust this value as needed */
-        }
-
-        h1 {
-            color: #333; /* Dark color for the heading */
-            text-align: center;
-        }
-    </style>
-</head>
-
-<body>
-
-    <!-- Navigation bar with links -->
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="forum.html">Forum</a>
-        <a href="Qiang%20Steven%20Wu%20CV.pdf" target="_blank">CV</a> <!-- Added CV button -->
-    </div>
-
-    <h1>Qiang (Steven) Wu / 吴强</h1>
-
-    <div class="content-wrapper">
-        <img src="headshot.jpg" alt="Steven" width="200">
-
-        <div class="content-text">
-            <p>Howdy! I'm Steven, a Ph.D. candidate in Political Science at the Bush School of Government & Public Service at Texas A&M University...</p>
-        </div>
+            background-color: rgba(255,
