@@ -1,103 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qiang (Steven) Wu's Personal Website</title>
     <style>
-        /* Add background image to the body */
         body {
-            font-family: Arial, sans-serif;
-            background-image: url('yangming.jpg'); /* Path to the background image */
-            background-size: cover; /* Ensures the image covers the full screen */
-            background-position: center; /* Center the image */
-            background-repeat: no-repeat; /* Prevents tiling */
-            min-height: 100vh; /* Ensure the body height covers the full screen */
-            margin: 0;
-            padding: 0;
+            background-image: url('yangming.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: white; /* Change text color to white for better visibility */
         }
-
-        /* Container to ensure content always has enough space */
-        .container {
-            min-height: 100vh; /* Minimum height is the full screen */
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
         /* Navigation bar styles */
-        .navbar {
-            background-color: rgba(0, 0, 0, 0.7); /* Dark navbar with transparency */
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-        }
+    .navbar {
+        background-color: rgba(51, 51, 51, 0.8); /* Add some transparency */
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px;
+    }
 
-        .navbar a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-        }
+    .navbar a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+    }
 
-        .navbar a:hover {
-            background-color: #575757;
-        }
+    .navbar a:hover {
+        background-color: rgba(87, 87, 87, 0.8);
+        color: white;
+    }
 
-        h1 {
-            color: #333;
-            text-align: center;
-            margin-top: 20px;
-        }
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
 
-        .content-wrapper {
-            display: flex;
-            align-items: flex-start;
-            background-color: rgba(255, 255, 255, 0.85); /* White with slight transparency */
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px auto;
-            max-width: 1000px; /* Limit the content width */
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for emphasis */
-        }
+    .button:hover {
+        background-color: darkblue;
+    }
 
-        .content-wrapper img {
-            margin-right: 20px;
-        }
+    p {
+        line-height: 2; /* Double spacing */
+    }
 
-        p {
-            line-height: 1.6;
-            color: #333;
-        }
-    </style>
+    .content-wrapper {
+        display: flex;
+        align-items: flex-start; /* align content to the top */
+        background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background */
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .content-wrapper img {
+        margin-right: 20px; /* Optional: space between the image and the content */
+    }
+
+    .content-text {
+        margin-top: -20px; /* Adjust this value as needed */
+    }
+
+    h1 {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        border-radius: 5px;
+    }
+</style>
 </head>
 
 <body>
+    <!-- Navigation bar with links -->
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="forum.html">Forum</a>
+    <a href="Qiang%20Steven%20Wu%20CV.pdf" target="_blank">CV</a> <!-- Added CV button -->
+</div>
 
-    <!-- Container to hold the entire page content -->
-    <div class="container">
-        <!-- Navigation bar with links -->
-        <div class="navbar">
-            <a href="index.html">Home</a>
-            <a href="research.html">Research</a>
-            <a href="teaching.html">Teaching</a>
-            <a href="forum.html">Forum</a>
-            <a href="Qiang%20Steven%20Wu%20CV.pdf" target="_blank">CV</a>
-        </div>
+<h1>Qiang (Steven) Wu / 吴强</h1>
 
-        <h1>Qiang (Steven) Wu / 吴强</h1>
+<div class="content-wrapper">
+    <img src="headshot.jpg" alt="Steven" width="200">
 
-        <div class="content-wrapper">
-            <img src="headshot.jpg" alt="Steven" width="200">
-            <div class="content-text">
-                <p>Howdy! I'm Steven, a Ph.D. candidate in Political Science at the Bush School of Government & Public Service at Texas A&M University. My research interests focus on the U.S.-China competition and the global order from the perspectives of international political economy, security, and institutions...</p>
-            </div>
-        </div>
+    <div class="content-text">
+        <p>Howdy! I'm Steven, a Ph.D. candidate in Political Science at the Bush School of Government & Public Service at Texas A&M University. My research interests focus on the U.S.-China competition and the global order from the perspectives of international political economy, security, and institutions. Another strand of my research examines globalization—specifically trade policy—and its interplay with domestic political institutions and public opinion.<br><br>
+            
+        <!-- Rest of your content here -->
+        </p>
     </div>
-
+</div>
 </body>
 
 </html>
