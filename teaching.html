@@ -1,16 +1,161 @@
-To link the text “CIRTL Associate Fellow Certificate” to the file named `CIRTL Associate Fellow Certificate.pdf` located in the same repository, you can modify the HTML code as follows:
+<!DOCTYPE html>
+<html lang="en">
 
-```html
-<p>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching - Qiang (Steven) Wu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #555;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .nav-link {
+            margin-right: 10px;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+            border-radius: 5px;
+        }
+
+        .nav-link:hover {
+            background-color: #555;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        .image-wrapper {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image-wrapper img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .image-wrapper figcaption {
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
+        }
+
+        /* Style for the syllabus link */
+        .syllabus-link {
+            display: inline-block;
+            margin-top: 5px;
+            padding: 5px 10px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .syllabus-link:hover {
+            background-color: #575757;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="research.html" class="nav-link">Research</a>
+        <a href="teaching.html" class="nav-link">Teaching</a>
+        <a href="forum.html" class="nav-link">Forum</a>
+        <a href="Qiang%20Steven%20Wu%20CV.pdf" class="nav-link" target="_blank">CV</a>
+    </div>
+
+    <h1>Teaching</h1>
+
+    <!-- New content -->
+    <div class="container">
+        <h2>Instructor of Record:</h2>
+        <p>
+            POLS 429: Issues in World Politics (Undergraduate, 35 students), Texas A&M University (Fall 2024)<br>
+            <!-- Add the Syllabus link -->
+            <a href="Pols 429 Issues in World Politics Syllabus_0828.pdf" class="syllabus-link" target="_blank">Syllabus</a>
+        </p>
+
+        <h2>Graduate Lab Instructor and Grader:</h2>
+        <p>
+            POLS 209: Introduction to Political Science Research Methods (Statistics and Quantitative Research Methods), Texas A&M University<br>
+            <a href="https://drive.google.com/file/d/1zUu8gj0gCJ6LkB1yDyXeRJbjgxzSgS_h/view?usp=sharing" target="_blank">Led lab sessions on R programming for two classes</a> (25 students each), under the instruction of Ali Kagalwala (Spring 2024), Paul Kellstedt (Fall 2023), and Hyeran Jo (Fall 2021). Also graded statistics homework and writing assignments.
+        </p>
+        <p>
+            POLS 429: Issues in World Politics (Undergraduate, 35 students), Texas A&M University (Spring 2023)<br>
+            Graded writing assignments and occasionally served as a substitute instructor for Quan Li.
+        </p>
+
+        <h2>Online Course Instructor:</h2>
+        <p>
+            <a href="https://eduhk.ap.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%223bc3deaa-3818-4df8-90a6-ae12001005fb%22" target="_blank">Stata Introduction</a>, The Education University of Hong Kong (2022)<br>
+            Developed an online boot camp course for the Policy Science and Management Program of the Department of Asian and Policy Studies.
+        </p>
+
+        <h2>Online Discussion Session Instructor and Grader:</h2>
+        <p>
+            POLS 200: Foundations of Political Science, Texas A&M University<br>
+            Led discussion sessions for two classes (25 students each) under the instruction of José Antonio Cheibub (Spring 2021) and Michelle Taylor-Robinson (Fall 2020). Also graded writing assignments.
+        </p>
+
+        <h2>Teaching Training:</h2>
+        <p>
     The Center for the Integration of Research, Teaching, and Learning (CIRTL)<br>
     <a href="CIRTL Associate Fellow Certificate.pdf" target="_blank">CIRTL Associate Fellow Certificate</a>, awarded by the Center for Teaching Excellence, Texas A&M University, Spring 2024.
 </p>
-```
+        <p>
+            POLS 681 Teaching Seminar, Texas A&M University, Spring 2024.<br>
+            Teaching & Learning Conference (TLC) at APSA: Teaching Democracy, 2024.
+        </p>
+    </div>
 
-### Explanation:
+    <!-- Existing content (pictures, thank you notes, etc.) -->
+    <div class="container">
+        <h2>Students' Thank You Note</h2>
+        
+        <!-- Image 1 -->
+        <div class="image-wrapper">
+            <figure>
+                <img src="IMG_9664.png" alt="Thank you note from students">
+                <figcaption>From POLS 209 Research Methods Class in Spring 2024</figcaption>
+            </figure>
+        </div>
 
-- The `<a>` tag wraps around the text “CIRTL Associate Fellow Certificate.”
-- The `href` attribute is set to `"CIRTL Associate Fellow Certificate.pdf"`, which links to the file in the same repository.
-- The `target="_blank"` attribute is added to ensure that the file opens in a new tab when clicked.
+        <!-- Image 2 -->
+        <div class="image-wrapper">
+            <figure>
+                <img src="IMG_9665.png" alt="Thank you note from students">
+                <figcaption>From POLS 209 Research Methods Class in Spring 2024</figcaption>
+            </figure>
+        </div>
+    </div>
 
-This will create a clickable link for “CIRTL Associate Fellow Certificate” that opens the PDF file when clicked. Make sure the file `CIRTL Associate Fellow Certificate.pdf` is located in the same directory as your HTML file for the link to work properly.
+</body>
+
+</html>
