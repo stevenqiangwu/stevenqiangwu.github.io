@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,33 +6,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Teaching - Qiang (Steven) Wu</title>
+
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
-            padding: 20px;
+            color: #333;
             max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto;
+            padding: 40px 20px;
         }
 
         h1 {
             color: #333;
+            margin-top: 35px;
+            margin-bottom: 10px;
         }
 
         h2 {
+            color: #444;
+            border-bottom: 2px solid #333;
+            padding-bottom: 8px;
+            margin-top: 45px;
+        }
+
+        h3 {
             color: #555;
+            margin-bottom: 8px;
         }
 
         p {
+            margin-top: 5px;
             margin-bottom: 20px;
         }
 
+        a {
+            color: #245a8d;
+        }
+
+        a:hover {
+            color: #173e63;
+        }
+
+        /* Main navigation bar */
+        .navbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+
         .nav-link {
-            margin-right: 10px;
-            padding: 10px;
+            padding: 9px 13px;
             text-decoration: none;
             color: white;
             background-color: #333;
@@ -39,103 +71,586 @@
         }
 
         .nav-link:hover {
+            color: white;
             background-color: #555;
         }
 
-        .container {
-            margin-top: 20px;
+        /* Links to the two sections of this page */
+        .section-navigation {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 20px 0 30px 0;
         }
 
-        .image-wrapper {
-            text-align: center;
-            margin-bottom: 20px;
+        .section-link {
+            display: inline-block;
+            padding: 8px 14px;
+            color: #333;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
         }
 
-        .image-wrapper img {
-            max-width: 100%;
-            height: auto;
+        .section-link:hover {
+            color: #222;
+            background-color: #e3e3e3;
         }
 
-        .image-wrapper figcaption {
-            margin-top: 10px;
-            font-style: italic;
+        /* Teaching experience entries */
+        .teaching-item {
+            margin-bottom: 30px;
+        }
+
+        .course-title {
+            font-weight: bold;
+        }
+
+        .course-details {
             color: #555;
         }
 
-        /* Style for the syllabus link */
-        .syllabus-link {
+        /* Document buttons */
+        .document-link {
             display: inline-block;
-            margin-top: 5px;
-            padding: 5px 10px;
+            margin-top: 6px;
+            padding: 6px 11px;
             background-color: #333;
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            font-size: 0.92rem;
             font-weight: bold;
         }
 
-        .syllabus-link:hover {
+        .document-link:hover {
+            color: white;
             background-color: #575757;
+        }
+
+        /* Student comments */
+        .comments-course {
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .student-comment {
+            margin: 18px 0;
+            padding: 18px 22px;
+            background-color: #f7f7f7;
+            border-left: 5px solid #555;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .student-comment p {
+            margin: 0;
+        }
+
+        .evaluation-note {
+            color: #666;
+            font-size: 0.92rem;
+        }
+
+
+        /* Additional headings and summaries within Student Comments */
+        .comments-group {
+            margin-top: 35px;
+        }
+
+        .comments-group h4 {
+            color: #555;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 1.15rem;
+        }
+
+        .role-heading {
+            margin-top: 28px;
+            margin-bottom: 8px;
+            color: #444;
+            font-size: 1.05rem;
+        }
+
+        .evaluation-summary {
+            margin: 18px 0;
+            padding: 18px 22px;
+            background-color: #f7f7f7;
+            border-left: 5px solid #888;
+            border-radius: 4px;
+        }
+
+        .evaluation-summary p {
+            margin: 0;
+        }
+
+        /* Responsive gallery for thank-you notes */
+        .notes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .thank-you-note {
+            margin: 0;
+            padding: 14px;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .thank-you-note img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .thank-you-note figcaption {
+            margin-top: 12px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 25px 15px;
+            }
+
+            .nav-link {
+                padding: 7px 10px;
+                font-size: 0.92rem;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Navigation bar -->
-    <div class="navbar">
+    <!-- Main website navigation -->
+    <nav class="navbar" aria-label="Main navigation">
         <a href="index.html" class="nav-link">Home</a>
         <a href="research.html" class="nav-link">Research</a>
         <a href="teaching.html" class="nav-link">Teaching</a>
         <a href="forum.html" class="nav-link">Forum</a>
         <a href="journal.html" class="nav-link">Journal</a>
-        <a href="Qiang%20Steven%20Wu%20CV.pdf" class="nav-link" target="_blank">CV</a>
-    </div>
+        <a href="assets/cv/Qiang%20Steven%20Wu%20CV.pdf"
+           class="nav-link"
+           target="_blank"
+           rel="noopener noreferrer">CV</a>
+    </nav>
 
-    <h1>Teaching</h1>
+    <main>
+        <h1>Teaching</h1>
 
-    <!-- New content -->
-    <div class="container">
-        <h2>Instructor of Record:</h2>
-        <p>
-            POLS 429: Issues in World Politics (Undergraduate, 35 students), Texas A&M University (Fall 2024)<br>
-            <!-- Add the Syllabus link -->
-            <a href="Pols 429 Issues in World Politics Syllabus_0828.pdf" class="syllabus-link" target="_blank">Syllabus</a>
-        </p>
+        <!-- Navigation within the Teaching page -->
+        <nav class="section-navigation" aria-label="Teaching page sections">
+            <a href="#teaching-experience" class="section-link">
+                Teaching Experience
+            </a>
 
-        <h2>Graduate Lab Instructor and Grader:</h2>
-        <p>
-            POLS 209: Introduction to Political Science Research Methods (Statistics and Quantitative Research Methods), Texas A&M University<br>
-            <a href="https://drive.google.com/file/d/1zUu8gj0gCJ6LkB1yDyXeRJbjgxzSgS_h/view?usp=sharing" target="_blank">Led lab sessions on R programming for two classes</a> (25 students each), under the instruction of Ali Kagalwala (Spring 2024), Paul Kellstedt (Fall 2023), and Hyeran Jo (Fall 2021). Also graded statistics homework and writing assignments.
-        </p>
-        <p>
-            POLS 429: Issues in World Politics (Undergraduate, 35 students), Texas A&M University (Spring 2023)<br>
-            Graded writing assignments and occasionally served as a substitute instructor for Quan Li.
-        </p>
+            <a href="#student-comments" class="section-link">
+                Student Comments
+            </a>
+        </nav>
 
-        <h2>Online Course Instructor:</h2>
-        <p>
-            <a href="https://eduhk.ap.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%223bc3deaa-3818-4df8-90a6-ae12001005fb%22" target="_blank">Stata Introduction</a>, The Education University of Hong Kong (2022)<br>
-            Developed an online boot camp course for the Policy Science and Management Program of the Department of Asian and Policy Studies.
-        </p>
+        <!-- =========================================================
+             SECTION 1: TEACHING EXPERIENCE
+             ========================================================= -->
 
-        <h2>Online Discussion Session Instructor and Grader:</h2>
-        <p>
-            POLS 200: Foundations of Political Science, Texas A&M University<br>
-            Led discussion sessions for two classes (25 students each) under the instruction of José Antonio Cheibub (Spring 2021) and Michelle Taylor-Robinson (Fall 2020). Also graded writing assignments.
-        </p>
+        <section id="teaching-experience">
+            <h2>Teaching Experience</h2>
 
-<h2>Teaching Training:</h2>
-<p>
-    The Center for the Integration of Research, Teaching, and Learning (CIRTL)<br>
-    <a href="CIRTL Associate Fellow Certificate.jpg" target="_blank">CIRTL Associate Fellow Certificate</a>, awarded by the Center for Teaching Excellence, Texas A&M University, Spring 2024.
-</p>
-        <p>
-            POLS 681 Teaching Seminar, Texas A&M University, Spring 2024.<br>
-            Teaching & Learning Conference (TLC) at APSA: Teaching Democracy, 2024.
-        </p>
-    </div>
-    
+            <div class="teaching-item">
+                <h3>Instructor of Record</h3>
+
+                <p>
+                    <span class="course-title">
+                        POLS 429: Issues in World Politics
+                    </span><br>
+
+                    <span class="course-details">
+                        Undergraduate course, 35 students, Texas A&amp;M University,
+                        Fall 2024
+                    </span><br>
+
+			<a href="assets/teaching/teachingmaterials/pols-429-syllabus-fall-2024.pdf"
+                       class="document-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View Syllabus
+                    </a>
+                </p>
+            </div>
+
+            <div class="teaching-item">
+                <h3>Graduate Lab Instructor and Grader</h3>
+
+                <p>
+                    <span class="course-title">
+                        POLS 209: Introduction to Political Science Research Methods
+                    </span><br>
+
+                    <span class="course-details">
+                        Statistics and Quantitative Research Methods,
+                        Texas A&amp;M University
+                    </span>
+                </p>
+
+                <p>
+                    <a href="https://drive.google.com/file/d/1zUu8gj0gCJ6LkB1yDyXeRJbjgxzSgS_h/view?usp=sharing"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Led laboratory sessions on R programming
+                    </a>
+                    for two classes of approximately 25 students each under
+                    the instruction of Ali Kagalwala in Spring 2024,
+                    Paul Kellstedt in Fall 2023, and Hyeran Jo in Fall 2021.
+                    Also graded statistics homework and writing assignments.
+                </p>
+
+                <p>
+                    <span class="course-title">
+                        POLS 429: Issues in World Politics
+                    </span><br>
+
+                    <span class="course-details">
+                        Undergraduate course, 35 students,
+                        Texas A&amp;M University, Spring 2023
+                    </span>
+                </p>
+
+                <p>
+                    Graded writing assignments and occasionally served as
+                    a substitute instructor for Quan Li.
+                </p>
+            </div>
+
+            <div class="teaching-item">
+                <h3>Online Course Instructor</h3>
+
+                <p>
+                    <span class="course-title">Stata Introduction</span><br>
+
+                    <span class="course-details">
+                        The Education University of Hong Kong, 2022
+                    </span>
+                </p>
+
+                <p>
+                    Developed an online boot camp course for the Policy Science
+                    and Management Program in the Department of Asian and
+                    Policy Studies.
+                </p>
+
+                <a href="https://eduhk.ap.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%223bc3deaa-3818-4df8-90a6-ae12001005fb%22"
+                   class="document-link"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View Course Materials
+                </a>
+            </div>
+
+            <div class="teaching-item">
+                <h3>Online Discussion Session Instructor and Grader</h3>
+
+                <p>
+                    <span class="course-title">
+                        POLS 200: Foundations of Political Science
+                    </span><br>
+
+                    <span class="course-details">
+                        Texas A&amp;M University
+                    </span>
+                </p>
+
+                <p>
+                    Led online discussion sessions for two classes of approximately
+                    25 students each under the instruction of José Antonio Cheibub
+                    in Spring 2021 and Michelle Taylor-Robinson in Fall 2020.
+                    Also graded writing assignments.
+                </p>
+            </div>
+
+            <div class="teaching-item">
+                <h3>Teaching Training</h3>
+
+                <p>
+                    <span class="course-title">
+                        Center for the Integration of Research, Teaching,
+                        and Learning
+                    </span><br>
+
+                    CIRTL Associate Fellow Certificate, awarded by the Center
+                    for Teaching Excellence at Texas A&amp;M University,
+                    Spring 2024.<br>
+
+                    <a href="CIRTL%20Associate%20Fellow%20Certificate.jpg"
+                       class="document-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View Certificate
+                    </a>
+                </p>
+
+                <p>
+                    <span class="course-title">POLS 681: Teaching Seminar</span>,
+                    Texas A&amp;M University, Spring 2024.
+                </p>
+
+                <p>
+                    <span class="course-title">
+                        APSA Teaching &amp; Learning Conference:
+                        Teaching Democracy
+                    </span>,
+                    2024.
+                </p>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             SECTION 2: STUDENT COMMENTS
+             Replace the sample text and filenames below.
+             ========================================================= -->
+
+        <section id="student-comments">
+            <h2>Student Comments</h2>
+
+            <p>
+                Selected anonymous student evaluations and handwritten feedback
+                are presented below. Links to the original documents are included
+                for reference.
+            </p>
+
+            <div class="comments-group">
+                <h3>Texas A&amp;M University</h3>
+
+                <h4>Selected Anonymous Student Evaluations</h4>
+
+                <h5 class="role-heading">Instructor of Record</h5>
+
+                <div class="comments-course">
+                    <p>
+                        <span class="course-title">
+                            POLS 429: Issues in World Politics
+                        </span><br>
+                        <span class="course-details">Spring 2025</span>
+                    </p>
+
+                    <blockquote class="student-comment">
+                        <p>“The lectures were always very interesting.”</p>
+                    </blockquote>
+
+                    <blockquote class="student-comment">
+                        <p>
+                            “The readings were interesting, and I liked how we had
+                            to present the readings ourselves.”
+                        </p>
+                    </blockquote>
+
+                    <a href="assets/teaching/studentcomments/student-evaluation-Spring-25.pdf"
+                       class="document-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View Original Document
+                    </a>
+                </div>
+
+                <h5 class="role-heading">Teaching Assistant</h5>
+
+                <div class="comments-course">
+                    <p>
+                        <span class="course-title">
+                            POLS 209: Introduction to Political Science Research
+                        </span><br>
+                        <span class="course-details">Fall 2021</span>
+                    </p>
+
+                    <blockquote class="student-comment">
+                        <p>
+                            “My TA Steven did an amazing job at not only providing
+                            feedback but helping us when we didn't understand or
+                            weren't able to fix our issues.”
+                        </p>
+                    </blockquote>
+
+                    <blockquote class="student-comment">
+                        <p>
+                            “Dr. Wu is absolutely amazing!! Best TA I have ever had.
+                            He is so friendly, helpful, and always has a smile on his
+                            face. If I was confused on a concept—which was often—he
+                            always went out of his way to help me understand it. He
+                            always provided clear instructions for what he expected
+                            of us.”
+                        </p>
+                    </blockquote>
+
+                    <blockquote class="student-comment">
+                        <p>
+                            “Would not have made it through this class without
+                            Mr. Wu. He was extremely helpful the entire year and made
+                            sure we were all able to submit good work on our
+                            assignments.”
+                        </p>
+                    </blockquote>
+
+                    <a href="assets/teaching/studentcomments/student-evaluation-fall-21.pdf"
+                       class="document-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View Original Document
+                    </a>
+                </div>
+
+                <div class="comments-course">
+                    <p>
+                        <span class="course-title">
+                            POLS 200: Foundations of Political Science
+                        </span><br>
+                        <span class="course-details">Spring 2021, Section 905</span>
+                    </p>
+
+                    <div class="evaluation-summary">
+                        <p>
+                            All eight respondents rated my contribution to the
+                            learning environment positively: six “strongly agree”
+                            and two “agree.” Six of eight said my teaching contributed
+                            “a lot” to their learning.
+                        </p>
+                    </div>
+
+                    <a href="assets/teaching/studentcomments/student-evaluation-spring-21-905.pdf"
+                       class="document-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View Original Document
+                    </a>
+                </div>
+
+                <div class="comments-course">
+                    <p>
+                        <span class="course-title">
+                            POLS 200: Foundations of Political Science
+                        </span><br>
+                        <span class="course-details">Spring 2021, Section 908</span>
+                    </p>
+
+                    <div class="evaluation-summary">
+                        <p>
+                            All five respondents strongly agreed that I fostered an
+                            effective learning environment, and all five said my
+                            teaching methods contributed “a lot” to their learning.
+                        </p>
+                    </div>
+
+                    <a href="assets/teaching/studentcomments/student-evaluation-spring-21-908.pdf"
+                       class="document-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View Original Document
+                    </a>
+                </div>
+
+                <h4>Anonymous Students’ Handwritten Feedback</h4>
+
+                <div class="comments-course">
+                    <blockquote class="student-comment">
+                        <p>
+                            “BEST T.A. What went well was his availability,
+                            flexibility, and his way of teaching the class. Points of
+                            improvement are not necessary, as he is very passionate
+                            and makes it enjoyable to go to class. You are the best,
+                            Steven!”
+                        </p>
+                    </blockquote>
+
+                    <a href="assets/teaching/studentcomments/POLS209_Fall2021_Handwritten_Feedback_Section905_1.pdf"
+                       class="document-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View Original Handwritten Feedback
+                    </a>
+                </div>
+
+                <div class="comments-course">
+                    <blockquote class="student-comment">
+                        <p>
+                            “Steven is a great TA. He does a good job describing
+                            stuff for lab. He is also very accessible by email.”
+                        </p>
+                    </blockquote>
+
+                    <a href="assets/teaching/studentcomments/POLS209_Fall2021_Handwritten_Feedback_Section903.pdf"
+                       class="document-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View Original Handwritten Feedback
+                    </a>
+                </div>
+
+                <div class="comments-course">
+                    <blockquote class="student-comment">
+                        <p>
+                            “Labs were super helpful; I would not be passing without
+                            them. Mr. Wu is the best TA!! No complaints.”
+                        </p>
+                    </blockquote>
+
+                    <a href="assets/teaching/studentcomments/POLS209_Fall2021_Handwritten_Feedback_Section905_2.pdf"
+                       class="document-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View Original Handwritten Feedback
+                    </a>
+                </div>
+
+                <h4>Students’ Thank-You Notes</h4>
+
+                <div class="notes-grid">
+                    <figure class="thank-you-note">
+                        <a href="assets/teaching/studentcomments/IMG_9664.png"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <img src="assets/teaching/studentcomments/IMG_9664.png"
+                                 alt="Student thank-you note 1"
+                                 loading="lazy">
+                        </a>
+                        <figcaption>
+                            Thank-You Note 1<br>
+                            <a href="assets/teaching/studentcomments/IMG_9664.png"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                View Full-Size Image
+                            </a>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="thank-you-note">
+                        <a href="assets/teaching/studentcomments/IMG_9665.png"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <img src="assets/teaching/studentcomments/IMG_9665.png"
+                                 alt="Student thank-you note 2"
+                                 loading="lazy">
+                        </a>
+                        <figcaption>
+                            Thank-You Note 2<br>
+                            <a href="assets/teaching/studentcomments/IMG_9665.png"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                View Full-Size Image
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
 </body>
 
 </html>
