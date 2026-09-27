@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey | Qiang (Steven) Wu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #222;
+            background: #fff;
+        }
+
+        .navbar {
+            background-color: #333;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navbar a:hover,
+        .navbar a[aria-current="page"] {
+            background-color: #575757;
+            color: white;
+        }
+
+        main {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 38px 22px 70px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 2.35rem;
+        }
+
+        .intro {
+            max-width: 850px;
+            margin: 0 0 48px;
+            font-size: 1.08rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .journey-section {
+            margin: 54px 0 66px;
+        }
+
+        .journey-section h2 {
+            margin-bottom: 10px;
+            padding-bottom: 9px;
+            border-bottom: 1px solid #ddd;
+            font-size: 1.55rem;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+            align-items: start;
+            margin-top: 26px;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        figure a {
+            display: block;
+        }
+
+        figure img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+        }
+
+        figure.portrait img {
+            object-position: center 35%;
+        }
+
+        figcaption {
+            margin-top: 11px;
+            line-height: 1.55;
+            color: #444;
+            font-size: 0.96rem;
+        }
+
+        figcaption strong {
+            color: #222;
+        }
+
+        .back-home {
+            display: inline-block;
+            margin-top: 10px;
+            color: #1a4f8b;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .back-home:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 850px) {
+            .photo-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 590px) {
+            main {
+                padding: 28px 16px 50px;
+            }
+
+            .photo-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="journey.html" aria-current="page">Journey</a>
+        <a href="forum.html">Forum</a>
+        <a href="journal.html">Journal</a>
+        <a href="assets/cv/Qiang_Steven_Wu_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+    </div>
+
+    <main>
+        <h1>Academic &amp; Professional Journey</h1>
+        <p class="intro">Selected moments from my academic and professional journey—from earlier work in China and graduate training in East Asia and the United States to my current research and teaching.</p>
+
+        <section class="journey-section" id="early-experiences">
+            <h2>Early Professional and Academic Experiences</h2>
+            <div class="photo-grid">
+                <figure>
+                    <a href="assets/journey/Boao.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/journey/Boao.jpg" alt="Steven Wu at the Boao Forum for Asia Annual Conference in 2009">
+                    </a>
+                    <figcaption><strong>Boao Forum for Asia Annual Conference, 2009.</strong> Participating in the conference during my service with the Foreign Affairs Committee of China’s National People’s Congress.</figcaption>
+                </figure>
+
+                <figure>
+                    <a href="assets/journey/Italy.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/journey/Italy.jpg" alt="Steven Wu with members of the Italian Chamber of Deputies in Rome in 2011">
+                    </a>
+                    <figcaption><strong>Chamber of Deputies, Rome, 2011.</strong> With members of the Italian Chamber of Deputies’ Foreign and Community Affairs Committee during an official visit by the NPC Foreign Affairs Committee.</figcaption>
+                </figure>
+
+                <figure class="portrait">
+                    <a href="assets/journey/Kyoto.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/journey/Kyoto.jpg" alt="Steven Wu in Kyoto, Japan, during graduate study at Kyoto University in 2013">
+                    </a>
+                    <figcaption><strong>Kyoto, Japan, 2013.</strong> During my JDS-supported graduate study at Kyoto University.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="journey-section" id="graduate-community">
+            <h2>Graduate Training and Scholarly Community</h2>
+            <div class="photo-grid">
+                <figure>
+                    <a href="assets/journey/SAIS.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/journey/SAIS.jpg" alt="Steven Wu with fellow editors and contributors at Johns Hopkins SAIS in 2019">
+                    </a>
+                    <figcaption><strong>Johns Hopkins SAIS, Washington, DC, 2019.</strong> With fellow editors and contributors to the <em>SAIS China Studies Review</em>, where I served as an editor.</figcaption>
+                </figure>
+
+                <figure>
+                    <a href="assets/journey/IHS.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/journey/IHS.jpg" alt="Steven Wu at an Institute for Humane Studies trade paper workshop hosted at Harvard University in 2024">
+                    </a>
+                    <figcaption><strong>IHS Trade Paper Workshop, Harvard University, 2024.</strong> Presenting my research on international trade at a paper workshop organized by the Institute for Humane Studies and hosted at Harvard University.</figcaption>
+                </figure>
+
+                <figure>
+                    <a href="assets/journey/IPSCON.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/journey/IPSCON.jpg" alt="Steven Wu at the IPSCON DC Policy Workshop at the Henry A. Kissinger Center for Global Affairs in 2025">
+                    </a>
+                    <figcaption><strong>IPSCON DC Policy Workshop, Henry A. Kissinger Center for Global Affairs, Johns Hopkins SAIS, 2025.</strong> Participating in discussions with junior and senior scholars and practitioners on international order, strategy, and foreign policy.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="journey-section" id="research-today">
+            <h2>Research and Academic Life Today</h2>
+            <div class="photo-grid">
+                <figure>
+                    <a href="assets/journey/Defense.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/journey/Defense.jpg" alt="Steven Wu with his dissertation committee following his 2026 dissertation defense at Texas A&amp;M University">
+                    </a>
+                    <figcaption><strong>Dissertation Defense, Texas A&amp;M University, 2026.</strong> With my dissertation committee, in person and online, following the defense.</figcaption>
+                </figure>
+
+                <figure>
+                    <a href="assets/journey/APSA.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/journey/APSA.jpg" alt="Steven Wu presenting China-Africa research at the 2026 APSA Annual Meeting in Boston">
+                    </a>
+                    <figcaption><strong>APSA Annual Meeting, Boston, 2026.</strong> Presenting my China–Africa research on a panel I organized on economic statecraft and strategic alignment.</figcaption>
+                </figure>
+
+                <figure class="portrait">
+                    <a href="assets/journey/UAlbany.jpg" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/journey/UAlbany.jpg" alt="Steven Wu at the University at Albany, SUNY, in 2026">
+                    </a>
+                    <figcaption><strong>University at Albany, SUNY, 2026.</strong></figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <a class="back-home" href="index.html">&larr; Back to home</a>
+    </main>
+</body>
+
+</html>

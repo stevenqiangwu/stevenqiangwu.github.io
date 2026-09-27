@@ -58,6 +58,83 @@
         .content-text {
             margin-top: -20px; /* Adjust this value as needed */
         }
+
+
+        .journey-teaser {
+            max-width: 1100px;
+            margin: 48px auto 36px;
+            padding: 0 16px;
+        }
+
+        .journey-teaser h2 {
+            margin-bottom: 8px;
+        }
+
+        .journey-teaser-intro {
+            margin-top: 0;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .journey-teaser-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+            margin-top: 22px;
+        }
+
+        .journey-teaser-card {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .journey-teaser-card img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .journey-teaser-card span {
+            display: block;
+            margin-top: 8px;
+            font-weight: 600;
+        }
+
+        .journey-link {
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: 600;
+            color: #1a4f8b;
+            text-decoration: none;
+        }
+
+        .journey-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 760px) {
+            .navbar {
+                flex-wrap: wrap;
+            }
+
+            .content-wrapper {
+                display: block;
+            }
+
+            .content-wrapper img {
+                margin: 0 0 20px 0;
+            }
+
+            .content-text {
+                margin-top: 0;
+            }
+
+            .journey-teaser-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 
@@ -68,6 +145,7 @@
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
         <a href="teaching.html">Teaching</a>
+        <a href="journey.html">Journey</a>
         <a href="forum.html">Forum</a>
         <a href="journal.html">Journal</a>
         <a href="assets/cv/Qiang_Steven_Wu_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
@@ -87,11 +165,36 @@ I hold an M.A. in International Economics and China Studies, with a specializati
 
 Before beginning my doctoral training, I spent eight years at the Foreign Affairs Committee of China’s National People’s Congress, where I supported legislative diplomacy and treaty-related affairs. This work gave me firsthand insight into how China’s legislative bureaucracy interacts with government agencies responsible for trade, technology, and national security. I also spent two years studying in Japan and two years working for a South Korean multinational corporation, experiences that deepened my understanding of the political economies and societies of East Asia.<br><br>
 
-My recent fellowships and honors include the <a href="https://kissinger.sais.jhu.edu/programs-and-projects/ipscon/" target="_blank" rel="noopener noreferrer">International Policy Scholars Consortium and Network</a> at the Henry A. Kissinger Center for Global Affairs, the <a href="https://www.linkedin.com/posts/peter-harris-a773772a2_foreign-policy-impact-summer-institute-2025-activity-7236796427979341824-1t4I/" target="_blank" rel="noopener noreferrer">Foreign Policy Impact Summer Institute</a> at Colorado State University, the <a href="https://theihs.org/hsf" target="_blank" rel="noopener noreferrer">Humane Studies Fellowship</a>, and second place in the Bretton Woods Committee’s <a href="https://stevenqiangwu.github.io/assets/index/Henry_Owen_Memorial_Award_2020_Winners_Announced_The_Bretton_Woods_Committee.pdf" target="_blank" rel="noopener noreferrer">Henry Owen Memorial Award</a>. At the 2026 APSA Annual Meeting, I am organizing and presenting on a panel on <a href="https://convention2.allacademic.com/one/apsa/apsa26/index.php?cmd=Online+Program+View+Session&amp;selected_session_id=2332064" target="_blank" rel="noopener noreferrer">economic statecraft and great-power competition</a>. My research has also received support from the Cato Institute, the Carnegie Corporation of New York, the Northeast Asia Economic Forum, the Volkswagen Foundation, and the Japan International Cooperation Agency.<br><br>
+My recent fellowships and honors include the <a href="https://kissinger.sais.jhu.edu/programs-and-projects/ipscon/" target="_blank" rel="noopener noreferrer">International Policy Scholars Consortium and Network</a> at the Henry A. Kissinger Center for Global Affairs, the <a href="https://www.linkedin.com/posts/peter-harris-a773772a2_foreign-policy-impact-summer-institute-2025-activity-7236796427979341824-1t4I/" target="_blank" rel="noopener noreferrer">Foreign Policy Impact Summer Institute</a> at Colorado State University, the <a href="https://theihs.org/hsf" target="_blank" rel="noopener noreferrer">Humane Studies Fellowship</a>, and second place in the Bretton Woods Committee’s <a href="https://stevenqiangwu.github.io/assets/index/Henry_Owen_Memorial_Award_2020_Winners_Announced_The_Bretton_Woods_Committee.pdf" target="_blank" rel="noopener noreferrer">Henry Owen Memorial Award</a>. At the 2026 APSA Annual Meeting, I organized and presented on a panel on <a href="https://convention2.allacademic.com/one/apsa/apsa26/index.php?cmd=Online+Program+View+Session&amp;selected_session_id=2332064" target="_blank" rel="noopener noreferrer">economic statecraft and great-power competition</a>. My research has also received support from the Cato Institute, the Carnegie Corporation of New York, the Northeast Asia Economic Forum, the Volkswagen Foundation, and the Japan International Cooperation Agency.<br><br>
 
 For a more detailed overview of my research, teaching, and professional experience, please <a href="https://stevenqiangwu.github.io/assets/cv/Qiang_Steven_Wu_CV.pdf" target="_blank" rel="noopener noreferrer">view my CV</a>.</p>
         </div>
     </div>
+
+
+    <section class="journey-teaser" aria-labelledby="journey-teaser-heading">
+        <h2 id="journey-teaser-heading">Academic &amp; Professional Journey</h2>
+        <p class="journey-teaser-intro">From international policy work and graduate study in East Asia to research and teaching in the United States.</p>
+
+        <div class="journey-teaser-grid">
+            <a class="journey-teaser-card" href="journey.html#early-experiences">
+                <img src="assets/journey/Boao.jpg" alt="Steven Wu at the Boao Forum for Asia Annual Conference in 2009">
+                <span>Boao Forum, 2009</span>
+            </a>
+
+            <a class="journey-teaser-card" href="journey.html#graduate-community">
+                <img src="assets/journey/SAIS.jpg" alt="Steven Wu with fellow editors and contributors at Johns Hopkins SAIS in 2019">
+                <span>Johns Hopkins SAIS, 2019</span>
+            </a>
+
+            <a class="journey-teaser-card" href="journey.html#research-today">
+                <img src="assets/journey/APSA.jpg" alt="Steven Wu presenting research at the 2026 APSA Annual Meeting in Boston">
+                <span>APSA Annual Meeting, 2026</span>
+            </a>
+        </div>
+
+        <a class="journey-link" href="journey.html">Explore my journey &rarr;</a>
+    </section>
 
 </body>
 
